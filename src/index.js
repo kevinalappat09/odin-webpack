@@ -1,7 +1,10 @@
-import _ from 'lodash';
+import myName from "./myName";
+import './styles.css'
+
 function component() {
     const element = document.createElement('div');
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+    element.innerHTML = myName("Kevin");
+    element.classList.add('hello');
 
     return element;
 }
